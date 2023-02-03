@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+        }
+        .quiz {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 80%;
+            position: absolute;
+            top: 130%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+        }
+        .quiz p {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    
+        .quiz input[type="radio"] {
+            margin-right: 10px;
+            font-size: 1em;
+        }
+    
+        #submit {
+            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+            width: 40%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+        }
+    </style>
+    <title>Quiz UML</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 style="text-align: center;">Quiz UML</h1><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <form id="quiz" style="text-align: center;" class="quiz">
+      <p id="question1">Qual é o significado do diagrama de Classes na UML?</p>
+      <input type="radio" id="q1a1" name="q1" value="25">
+      <label for="q1a1">Representação gráfica da estrutura do sistema</label><br>
+      <input type="radio" id="q1a2" name="q1" value="0">
+      <label for="q1a2">Modelagem de processos de negócio</label><br>
+      <input type="radio" id="q1a3" name="q1" value="0">
+      <label for="q1a3">Representação gráfica da arquitetura do sistema</label><br>
+      <input type="radio" id="q1a2" name="q1" value="0">
+      <label for="q1a2">Modelagem de processos de negócio</label><br>
+      <input type="radio" id="q1a3" name="q1" value="0">
+      <label for="q1a3">Representação gráfica da arquitetura do sistema</label><br>
+      <input type="radio" id="q1a4" name="q1" value="0">
+      <label for="q1a4">Modelagem de banco de dados</label><br>
+      <input type="radio" id="q1a5" name="q1" value="0">
+      <label for="q1a5">Modelagem de interface de usuário</label><br><br>
+      
+<p id="question2">Quais são os 3 principais tipos de diagramas UML?</p>
+<input type="radio" id="q2a1" name="q2" value="0">
+<label for="q2a1">Diagrama de Atividades, Diagrama de Casos de Uso e Diagrama de Estados</label><br>
+<input type="radio" id="q2a2" name="q2" value="0">
+<label for="q2a2">Diagrama de Classes, Diagrama de Objetos e Diagrama de Componentes</label><br>
+<input type="radio" id="q2a3" name="q2" value="25">
+<label for="q2a3">Diagrama de Classes, Diagrama de Atividades e Diagrama de Estados</label><br>
+<input type="radio" id="q2a4" name="q2" value="0">
+<label for="q2a4">Diagrama de Objetos, Diagrama de Componentes e diagrama</label>
+  <p id="question3">Uma classe na UML é representada por qual símbolo?</p>
+<input type="radio" id="q3a1" name="q3" value="0">
+<label for="q3a1">Círculo</label><br>
+<input type="radio" id="q3a2" name="q3" value="25">
+<label for="q3a2">Caixa</label><br>
+<input type="radio" id="q3a3" name="q3" value="0">
+<label for="q3a3">Triângulo</label><br>
+<input type="radio" id="q3a4" name="q3" value="0">
+<label for="q3a4">Losango</label><br><br>
+
+<p id="question4">Qual é o significado da ligação de dependência na UML?</p>
+<input type="radio" id="q4a1" name="q4" value="0">
+<label for="q4a1">Uma classe depende de outra</label><br>
+<input type="radio" id="q4a2" name="q4" value="25">
+<label for="q4a2">Uma classe usa outra</label><br>
+<input type="radio" id="q4a3" name="q4" value="0">
+<label for="q4a3">Uma classe herda outra</label><br>
+<input type="radio" id="q4a4" name="q4" value="0">
+<label for="q4a4">Uma classe substitui outra</label><br><br>
+<p id="question5">Quais são os 3 tipos principais de associação na UML?</p>
+<input type="radio" id="q5a1" name="q5" value="25">
+<label for="q5a1">Agregação, Composição e Dependência</label><br>
+<input type="radio" id="q5a2" name="q5" value="0">
+<label for="q5a2">Associação, Agregação e Herança</label><br>
+<input type="radio" id="q5a3" name="q5" value="0">
+<label for="q5a3">Associação, Dependência e Herança</label><br>
+<input type="radio" id="q5a4" name="q5" value="0">
+<label for="q5a4">Agregação, Associação e Herança</label><br><br>
+      <!-- Adicionar mais 4 perguntas -->
+    </form>
+    <center><button id="submit">Submit</button>
+    <br><br>
+    <div id="result"></div>
+    <img id="img-result" src="">
+  </body>
+  <script type="text/javascript" src="script.js"></script></center>
+</html>
